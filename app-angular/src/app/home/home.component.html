@@ -1,0 +1,20 @@
+<div class="mytoast mytoast-success animate__animated animate__zoomIn" *ngIf="loginSuccess">
+    Login Realizado, Aguarde
+</div>
+<div class="mytoast mytoast-error animate__animated animate__zoomIn" *ngIf="loginFailed">
+  Login Inválido
+</div>
+
+<div class="login-wrapper">
+  <form class="animate__animated animate__bounce">
+    <input type="text" placeholder="usuário">
+    <input type="password" placeholder="senha">
+    <button (click)="logar()">Login</button>
+    <div class="spinner spinner-border text-success" role="status" *ngIf="loginSuccess">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner spinner-border text-danger" role="status" *ngIf="loginFailed">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </form>
+</div>

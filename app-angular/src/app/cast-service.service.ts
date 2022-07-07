@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class CastServiceService {
   private AdminLogado! : boolean
-
+  userAdmin = 'samuel123'
   constructor() { }
 
   ngOnInit() {

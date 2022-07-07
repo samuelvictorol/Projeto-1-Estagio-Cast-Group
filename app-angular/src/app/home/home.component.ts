@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   }
 
   logar(){
-    this.service.setAdminLogado(false) // testar logica
+    this.service.setAdminLogado(!false) // testar logica
     if(this.service.getAdminLogado() == true){
       this.loginSuccess = true
       setTimeout(() => {

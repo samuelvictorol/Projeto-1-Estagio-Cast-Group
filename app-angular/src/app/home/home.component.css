@@ -40,10 +40,14 @@ img{
 }
 
 .login-wrapper{
-  background-color: rgb(244, 240, 240);
+
+
+background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 40%;
   height: 35rem;
-  box-shadow: 5px 5px 8px -2px #05005c;
+  box-shadow: 0px 0px 20px -3px #000000;
   margin-top: 6rem;
   margin-left: 30%;
   border-radius: 10px;
@@ -65,6 +69,9 @@ input{
   padding-left: 1rem;
   font-family: 'Quicksand';
   background-color: #021c7929;
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 1.4rem;
   outline: none;
   border-radius: 10px;
@@ -85,17 +92,18 @@ button{
   border-radius: 10px;
   border: none;
   color: rgb(216, 216, 216);
-  background-color: #0575E6;
+  background-color: #2C5364;
 
 }
 
 button:hover{
   width: 70%;
-  box-shadow: 0px 0px 19px -3px #0575E6;
+  box-shadow: 0px 0px 19px -3px #2C5364;
   color: #fff;
-  background: #0575E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 

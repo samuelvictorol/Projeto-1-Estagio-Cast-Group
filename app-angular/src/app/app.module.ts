@@ -8,12 +8,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { CastServiceService } from './cast-service.service';
 import { GerenciarComponent } from './gerenciar/gerenciar.component';
 import { HomeComponent } from './home/home.component';
+import { LogsComponent } from './logs/logs.component';
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     GerenciarComponent,
-    HomeComponent
-  ],
+    HomeComponent,
+    LogsComponent,
+      NavbarComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

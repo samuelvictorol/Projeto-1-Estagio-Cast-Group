@@ -10,8 +10,9 @@
     <div class="login-wrapper">
       <img src="assets/user.png" class="animate__animated animate__zoomInRight" alt="user-logo">
       <form class="animate__animated animate__bounce">
-        <input type="text" placeholder="usuário">
-        <input type="password" placeholder="senha">
+
+        <input name="username" type="text" placeholder="usuário" [(ngModel)]="username">
+        <input name="password" type="password" placeholder="senha" [(ngModel)]="password">
         <button (click)="logar()">Login</button>
         <div class="spinner spinner-border text-success" role="status" *ngIf="loginSuccess">
           <span class="visually-hidden">Loading...</span>
@@ -22,4 +23,5 @@
       </form>
     </div>
   </div>
+
 </div>

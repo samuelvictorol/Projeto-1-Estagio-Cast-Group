@@ -3,10 +3,10 @@
 body{
   font-family: 'Quicksand', sans-serif;
   width: 100%;
-  height:auto;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height:100vh;
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #121314, #080809);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #121314, #080809); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   overflow: hidden;
   font-size: 1.5rem;
@@ -36,3 +36,4 @@ background: -webkit-linear-gradient(to top, #2ebf91, #8360c3);  /* Chrome 10-25,
 background: linear-gradient(to top, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+

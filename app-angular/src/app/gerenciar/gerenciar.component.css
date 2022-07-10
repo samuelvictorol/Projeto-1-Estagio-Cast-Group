@@ -2,14 +2,19 @@
   height: 100vh;
   width: 100%;
 
+
 }
 
 .conteudo{
-  background-color: #4c67c729;
+  /* background-color: rgba(255, 255, 255, 0.314); */
   width: 95%;
   height: 40rem;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 10px
 }
 
+th{
+  color: rgb(229, 221, 221);
+
+}

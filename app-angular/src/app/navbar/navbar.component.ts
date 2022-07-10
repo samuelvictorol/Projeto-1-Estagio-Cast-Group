@@ -14,13 +14,13 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.loadLogout = false;
-    this.user = this.service.userAdmin
-
+    this.user = this.service.getUser().username;
   }
 
 
   logout(){
     this.loadLogout = true;
+    this.service.logout();
     setTimeout(() =>{
       this.router.navigate([''])
     }, 2000);

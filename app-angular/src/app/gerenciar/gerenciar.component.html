@@ -1,7 +1,22 @@
 <div class="gerenciar-wrapper">
   <app-navbar></app-navbar>
 
-  <div class="conteudo animate__animated animate__lightSpeedInLeft">
+  <div class="conteudo animate__animated animate__pulse">
+    <table class="container table table-hover table-striped table-dark">
+      <th>descricao</th>
+      <th>Inicio</th>
+      <th>Término</th>
+      <th>Qtd. Alunos</th>
+      <th>Categoria</th>
+      <tbody>
+        <tr *ngFor="let item of cursosList$|async">
+          <td>{{ item.descricao }}</td>
+          <td>{{item.dateInicio | date : 'mediumDate'  }}</td>
+          <td>{{item.dateTermino | date : 'mediumDate' }}</td>
+          <td>{{item.qtdAlunos }}</td>
+          <td>{{ categoriasMap.get(item.categoriaId) }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-
 </div>

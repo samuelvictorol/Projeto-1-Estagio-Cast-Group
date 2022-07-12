@@ -12,7 +12,7 @@ export class GerenciarComponent implements OnInit {
   cursosList$!: Observable<any[]>
   categoriaList$!: Observable<any[]>
   categoriaList: any = []
-
+  showAdd!: boolean
 //Map para associar as tabelas
   categoriasMap:Map<number, string> = new Map();
 
@@ -23,6 +23,7 @@ export class GerenciarComponent implements OnInit {
     this.cursosList$ = this.service.getCurso()
     this.categoriaList$ = this.service.getCategoria()
     this.refreshCategoriaMap()
+    this.showAdd = true /// trocar quando finalizar add-edit
   }
 
   refreshCategoriaMap(){
@@ -33,5 +34,11 @@ export class GerenciarComponent implements OnInit {
       }
     })
   }
+
+  addBtn(){
+    this.showAdd = !this.showAdd
+
+  }
+
 
 }

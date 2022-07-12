@@ -1,10 +1,20 @@
 <div class="gerenciar-wrapper">
   <app-navbar></app-navbar>
+  <div class="add-wrapper animate__animated animate__bounceInLeft" *ngIf="showAdd" >
+    <a class="add-close float-end" (click)="addBtn()">X</a>
+    <h1 class="animate__animated animate__fadeInRight">Adicionar Curso</h1>
+    <div class="form-wrapper">
+      <app-add-edit-cursos></app-add-edit-cursos>
+    </div>
+  </div>
 
   <div class="conteudo animate__animated animate__pulse">
+    <div class="buttons-wrapper">
+      <button class="btn-add" (click)="addBtn()">Adicionar <strong>+</strong></button>
+    </div>
     <table class="container table table-hover table-striped table-dark">
-      <th>descricao</th>
-      <th>Inicio</th>
+      <th>Descrição</th>
+      <th>Início</th>
       <th>Término</th>
       <th>Qtd. Alunos</th>
       <th>Categoria</th>

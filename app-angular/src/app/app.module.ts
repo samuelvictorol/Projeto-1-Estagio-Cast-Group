@@ -9,13 +9,15 @@ import { GerenciarComponent } from './gerenciar/gerenciar.component';
 import { HomeComponent } from './home/home.component';
 import { LogsComponent } from './logs/logs.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddEditCursosComponent } from './add-edit-cursos/add-edit-cursos.component';
 @NgModule({
   declarations: [
     AppComponent,
     GerenciarComponent,
     HomeComponent,
     LogsComponent,
-      NavbarComponent
+      NavbarComponent,
+      AddEditCursosComponent
    ],
   imports: [
     BrowserModule,

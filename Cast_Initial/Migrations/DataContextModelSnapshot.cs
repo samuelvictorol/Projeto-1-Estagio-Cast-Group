@@ -22,40 +22,10 @@ namespace Cast_Initial.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Cast_Initial.Log", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("CursoId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("LogTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("NomeLog")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("User")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CursoId");
-
-                    b.ToTable("Logs");
-                });
-
             modelBuilder.Entity("Cast_Initial.Models.Admin", b =>
                 {
                     b.Property<string>("Username")
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("LogId")
-                        .HasColumnType("int");
 
                     b.Property<string>("NomeCompleto")
                         .HasMaxLength(35)
@@ -65,8 +35,6 @@ namespace Cast_Initial.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Username");
-
-                    b.HasIndex("LogId");
 
                     b.ToTable("Admins");
                 });
@@ -117,28 +85,6 @@ namespace Cast_Initial.Migrations
                     b.HasIndex("CategoriaId");
 
                     b.ToTable("Cursos");
-                });
-
-            modelBuilder.Entity("Cast_Initial.Log", b =>
-                {
-                    b.HasOne("Cast_Initial.Models.Curso", "Curso")
-                        .WithMany()
-                        .HasForeignKey("CursoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Curso");
-                });
-
-            modelBuilder.Entity("Cast_Initial.Models.Admin", b =>
-                {
-                    b.HasOne("Cast_Initial.Log", "Log")
-                        .WithMany()
-                        .HasForeignKey("LogId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Log");
                 });
 
             modelBuilder.Entity("Cast_Initial.Models.Curso", b =>

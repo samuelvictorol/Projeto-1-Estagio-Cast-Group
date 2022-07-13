@@ -9,7 +9,9 @@ import { GerenciarComponent } from './gerenciar/gerenciar.component';
 import { HomeComponent } from './home/home.component';
 import { LogsComponent } from './logs/logs.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { AddEditCursosComponent } from './add-edit-cursos/add-edit-cursos.component';
+import { LimboComponent } from './limbo/limbo.component';
+import { AddCursosComponent } from './add-cursos/add-cursos.component';
+import { EditCursosComponent } from './edit-cursos/edit-cursos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import { AddEditCursosComponent } from './add-edit-cursos/add-edit-cursos.compon
     HomeComponent,
     LogsComponent,
       NavbarComponent,
-      AddEditCursosComponent
+      AddCursosComponent,
+      LimboComponent,
+      EditCursosComponent,
    ],
   imports: [
     BrowserModule,

@@ -7,10 +7,20 @@ import { Observable } from 'rxjs';
 })
 export class CastServiceService {
   private activeUser = undefined;
+  private editCurso = undefined;
   readonly CastAPI = "https://localhost:7082/api"
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
+  }
+
+  getEditCurso(){
+    return this.editCurso
+  }
+
+  setEditCurso(curso: any){
+    this.editCurso = curso
+
   }
 
   // Admin

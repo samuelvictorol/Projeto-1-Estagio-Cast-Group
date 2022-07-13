@@ -1,12 +1,14 @@
 <div class="gerenciar-wrapper">
   <app-navbar></app-navbar>
-  <div class="add-wrapper animate__animated animate__bounceInLeft" *ngIf="showAdd" >
-    <a class="add-close float-end" (click)="addBtn()">X</a>
-    <h1 class="animate__animated animate__fadeInRight">Adicionar Curso</h1>
-    <div class="form-wrapper">
-      <app-add-edit-cursos></app-add-edit-cursos>
+    <div class="add" *ngIf="showAdd" >
+      <div class="add-wrapper animate__animated animate__bounceInLeft" >
+        <a class="add-close float-end" (click)="addBtn()">X</a>
+        <h1 class="animate__animated animate__fadeInRight"><i>Gerenciar Curso</i></h1>
+      </div>
+      <div class="form-wrapper animate__animated animate__backInDown" *ngIf="showAdd">
+        <app-add-cursos></app-add-cursos>
+      </div>
     </div>
-  </div>
 
   <div class="conteudo animate__animated animate__pulse">
     <div class="buttons-wrapper">
@@ -16,17 +18,22 @@
       <th>Descrição</th>
       <th>Início</th>
       <th>Término</th>
-      <th>Qtd. Alunos</th>
+      <th>Alunos</th>
       <th>Categoria</th>
       <tbody>
-        <tr *ngFor="let item of cursosList$|async">
-          <td>{{ item.descricao }}</td>
-          <td>{{item.dateInicio | date : 'mediumDate'  }}</td>
-          <td>{{item.dateTermino | date : 'mediumDate' }}</td>
-          <td>{{item.qtdAlunos }}</td>
-          <td>{{ categoriasMap.get(item.categoriaId) }}</td>
+        <tr *ngFor="let curso of cursosList$|async">
+          <td>{{ curso.descricao }}</td>
+          <td>{{curso.dateInicio | date : 'mediumDate'  }}</td>
+          <td>{{curso.dateTermino | date : 'mediumDate' }}</td>
+          <td>{{curso.qtdAlunos }}</td>
+          <td>{{ categoriasMap.get(curso.categoriaId) }}</td>
+          <td><img src="assets/edit-icon.png" alt="icone editar" (click)="edit(curso)"></td>
+          <td><img src="assets/delete-icon.png" (click)="deletar(curso.id, curso)" alt="icone deletar"></td>
         </tr>
       </tbody>
     </table>
   </div>
+  <footer>
+    footer
+  </footer>
 </div>

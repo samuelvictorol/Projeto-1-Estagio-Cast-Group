@@ -1,0 +1,20 @@
+<form>
+  <label for="descricao">Descrição</label>
+  <input id="descricao" placeholder="descrição" [(ngModel)]="descricao" name="descricao">
+
+  <label for="dateInicio">Data de Início</label>
+  <input class="date" id="dateInicio" type="date"  [(ngModel)]="dateInicio" name="dateInicio">
+
+  <label for="dateTermino">Data de Término</label>
+  <input class="date" id="dateTermino" type="date" [(ngModel)]="dateTermino" name="dateTermino">
+
+  <label for="qtdAlunos">Quantidade de Alunos</label>
+  <input type="qtdAlunos" type="number" name="qtdAlunos" placeholder="ex: 20, 35, 40..." [(ngModel)]="qtdAlunos">
+
+  <label for="categoriaId">Categoria</label>
+  <select id="categoriaId" name="categoriaId" [(ngModel)]="categoriaId">
+    <option [value]="cat.id" *ngFor="let cat of categoriaList$|async">{{ cat.nomeCategoria }}</option>
+  </select>
+
+  <button (click)="addCurso()">Cadastrar Curso</button>
+</form>

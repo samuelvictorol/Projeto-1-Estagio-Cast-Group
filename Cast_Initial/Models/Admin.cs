@@ -11,7 +11,6 @@ namespace Cast_Initial.Models
         public string? Password { get; set; }
         [StringLength(35)]
         public string? NomeCompleto { get; set; }
-        public int LogId { get; set; }
-        public Log? Log { get; set; }
+
     }
 }

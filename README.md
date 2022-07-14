@@ -94,9 +94,7 @@
   <img align="center" alt="Samuel-SQLSERVER" height="40" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" />
   <img align="center" alt="Samuel-GIT" height="40" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" />
   <img align="center" alt="Samuel-BS" height="40" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-  <img align="center" alt="Samuel-GF" height="40" width="100" src="/Imagens/googleFonts.png" />
-  <img align="center" alt="Samuel-SG" height="40" width="100" src="https://www.mocklab.io/images/screenshots/swagger-logo2.png" />
-  <img align="center" alt="Samuel-Ui" height="40" width="100" src="http://uigradients.com/static/images/uigradients.jpg" />
+  <img align="center" alt="Samuel-SG" height="40" width="100" style="margin-top:10px" src="https://www.mocklab.io/images/screenshots/swagger-logo2.png" />
 </div>
 
 

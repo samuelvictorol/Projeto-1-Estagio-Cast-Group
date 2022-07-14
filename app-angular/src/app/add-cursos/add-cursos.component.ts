@@ -38,12 +38,12 @@ export class AddCursosComponent implements OnInit {
       return
     }
 
-    const dataValida = this.validarData(curso)
-
     if(curso.categoriaId == undefined) {
       alert('Selecione uma categoria')
       return
     }
+
+    const dataValida = this.service.validarData(curso)
 
     if(dataValida){
       this.service.addCurso(curso).subscribe(() =>{
@@ -57,19 +57,6 @@ export class AddCursosComponent implements OnInit {
       return
     }
 
-  }
-
-  validarData(curso: any) {
-    if(curso.dateInicio == undefined || curso.dateTermino == undefined){
-      alert('Campo(s) de Data não preenchido(s)')
-      return false
-    }
-    if(curso.dateInicio > curso.dateTermino){
-      alert('Não é possível iniciar em uma data posterior a data de término')
-      return false
-    }
-
-    return true
   }
 
   descricaoUpdate(descricao:any):void{

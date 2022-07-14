@@ -76,6 +76,21 @@ export class CastServiceService {
     return this.http.delete(this.CastAPI + `/Categorias/${id}`);
   }
 
+  validarData(curso: any) {
+    var dataValidada = true
 
+    if(curso.dateInicio == undefined || curso.dateTermino == undefined){
+      alert('Campo(s) de Data não preenchido(s)')
+      dataValidada = false
+    }
+
+    if(curso.dateInicio > curso.dateTermino){
+      alert('Não é possível iniciar em uma data posterior a data de término')
+      dataValidada = false
+    }
+
+    return dataValidada
+
+  }
 }
 

@@ -1,18 +1,24 @@
 <div class="edit-wrapper">
-  <h1 class="container ">Editar Curso</h1>
+  <h1 class="container animate__animated animate__lightSpeedInRight "><i>Editar Curso</i> </h1>
   <form class="container animate__animated animate__backInDown">
     <label for="curso.descricao">Descrição</label>
-    <input type="text" name="curso.descricao" placeholder="{{ curso.descricao }}">
+    <input type="text" name="curso.descricao"  [(ngModel)]="curso.descricao"  placeholder="{{ curso.descricao }}">
 
-    <label for="curso.dateInicio">Data Inicio</label>
-    <input type="date" name="curso.dateInicio" [(ngModel)]="curso.dateInicio" placeholder="{{ curso.dateInicio }}">
+    <label for="curso.dateInicio">Data Inicio Atual: {{ dataInicio | date : 'mediumDate' }}</label>
+    <input type="date" name="curso.dateInicio" [(ngModel)]="curso.dateInicio">
 
-    <label for="curso.dateTermino">Data Termino</label>
-    <input type="date" name="curso.dateTermino" [(ngModel)]="curso.dateTermino" placeholder="{{ curso.dateTermino }}">
+    <label for="curso.dateTermino">Data Termino Atual: {{ dataTermino | date : 'mediumDate'}}</label>
+    <input type="date" name="curso.dateTermino" [(ngModel)]="curso.dateTermino">
 
-    <label for="curso.qtdAlunos">Quantidade de Alunos</label>
-    <input type="number" name="curso.qtdAlunos" [(ngModel)]="curso.qtdAlunos" placeholder="{{ curso.qtdAlunos }}">
+    <label for="curso.qtdAlunos">Quantidade de Alunos (opcional)</label>
+    <input type="number" name="curso.qtdAlunos" [(ngModel)]="curso.qtdAlunos" placeholder="{{ curso.qtdAlunos }} ">
 
-    <button class="btn btn-primary" (click)="edit()">Teste</button>
+    <label for="categoriaId">Categoria</label>
+    <select id="categoriaId" name="categoriaId" [(ngModel)]="curso.categoriaId">
+      <option [value]="cat.id" *ngFor="let cat of categoriaList$|async">{{ cat.nomeCategoria }}</option>
+    </select>
+
+    <button id="editar" (click)="edit()">Editar Curso</button>
+    <button id="voltar" (click)="voltar()">Voltar</button>
   </form>
 </div>

@@ -4,7 +4,21 @@
   overflow: hidden;
 }
 
-img{
+
+.logo-wrapper {
+  top: 3rem;
+  left: 21rem;
+  position: fixed;
+}
+
+#logo{
+  border-radius: 25px;
+  width: 16rem;
+  height: 130px;
+  box-shadow: 0px 0px 17px -1px #000000;
+}
+
+#user-icon{
   width: 9%;
   height: 8rem;
   position: absolute;
@@ -28,9 +42,10 @@ img{
 }
 
 .mytoast-success{
+  padding-left: 4.5rem;
   background: #11998e;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #25d368, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
@@ -42,9 +57,9 @@ img{
 }
 
 .login-wrapper{
-  background: #403B4A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #d6da92, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #d6da92, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3C3B3F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 40%;
   height: 35rem;
   margin-top: 7rem;
@@ -109,7 +124,7 @@ button{
 
 button:hover{
   width: 70%;
-  box-shadow: 0px 4px 0px 3px  #797979;
+  box-shadow: 0px 4px 0px 3px  #646464;
 
   color: #D3CCE3;
 }

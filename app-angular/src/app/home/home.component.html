@@ -1,6 +1,9 @@
+<div class="logo-wrapper animate__animated animate__flipInY">
+  <img id="logo" src="assets/logo.png" alt="logo">
+</div>
 <div class="home-wrapper">
   <div class="mytoast mytoast-success animate__animated animate__zoomIn" *ngIf="loginSuccess">
-      Login Realizado, Aguarde
+      Login Realizado
   </div>
   <div class="mytoast mytoast-error animate__animated animate__zoomIn" *ngIf="loginFailed">
     Login Inválido
@@ -8,7 +11,7 @@
 
   <div class="wrapper">
     <div class="login-wrapper">
-      <img src="assets/user.png" class="animate__animated animate__zoomInRight" alt="user-logo">
+      <img id="user-icon" src="assets/user.png" class="animate__animated animate__zoomInRight" alt="user-logo">
       <form class="animate__animated animate__bounce">
 
         <input name="username" type="text" placeholder="usuário" [(ngModel)]="username">

@@ -3,16 +3,15 @@
     <div class="add" *ngIf="showAdd" >
       <div class="add-wrapper animate__animated animate__bounceInLeft" >
         <a class="add-close float-end" (click)="addBtn()">X</a>
-        <h1 class="animate__animated animate__fadeInRight"><i>Gerenciar Curso</i></h1>
+        <h1 class="animate__animated animate__fadeInRight"><i>Adicionar Curso</i></h1>
       </div>
       <div class="form-wrapper animate__animated animate__backInDown" *ngIf="showAdd">
         <app-add-cursos></app-add-cursos>
       </div>
     </div>
-
-  <div class="conteudo animate__animated animate__pulse">
-    <div class="buttons-wrapper">
-      <button class="btn-add" (click)="addBtn()">Adicionar <strong>+</strong></button>
+    <div class="conteudo animate__animated animate__pulse">
+      <div class="buttons-wrapper">
+        <button class="btn-add" (click)="addBtn()">Adicionar <strong>+</strong></button>
     </div>
     <table class="container table table-hover table-striped table-dark">
       <th>Descrição</th>
@@ -21,7 +20,7 @@
       <th>Alunos</th>
       <th>Categoria</th>
       <tbody>
-        <tr *ngFor="let curso of cursosList$|async">
+        <tr *ngFor="let curso of cursosList$|async" >
           <td>{{ curso.descricao }}</td>
           <td>{{curso.dateInicio | date : 'mediumDate'  }}</td>
           <td>{{curso.dateTermino | date : 'mediumDate' }}</td>

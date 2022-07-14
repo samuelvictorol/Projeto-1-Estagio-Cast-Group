@@ -19,9 +19,9 @@ export class GerenciarComponent implements OnInit {
 
   constructor(private service: CastServiceService, private router: Router) { }
 
+
   ngOnInit(): void {
     this.cursosList$ = this.service.getCurso()
-    this.categoriaList$ = this.service.getCategoria()
     this.refreshCategoriaMap()
     this.showAdd = false /// trocar quando finalizar add-edit
   }
@@ -37,16 +37,7 @@ export class GerenciarComponent implements OnInit {
 
   addBtn(){
     this.showAdd = !this.showAdd
-
   }
-
-  // manipularData(data:any){
-  //   var dia = String(data.getDate()).padStart(2, '0');
-  //   var mes = String(data.getMonth() + 1).padStart(2, '0');
-  //   var ano = data.getFullYear();
-  //   var dataAtual = dia + '/' + mes + '/' + ano;
-  //   return dataAtual;
-  // }
 
   edit(curso:any){
     this.service.setEditCurso(curso)

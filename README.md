@@ -41,7 +41,7 @@
   <img align="center"  height="300px" width="40%" src="/Imagens/gitBranchs.png" alt="logo"/>                  
  </div>
 
-# O Backend
+# O Back-end
 - Nesse Projeto foi utilizado a técnica de Code First, que consiste em fazer primeiro o código fonte.
 - Foi utilizado o EntityFramework para construções de tabelas e o Swagger para Requisições HTTP.
 - O banco de dados escolhido foi o SQLServer
@@ -53,7 +53,7 @@
   <img align="center"  height="300px" width="40%" src="/Imagens/Categorias_ssms.png" alt="logo"/>                  
  </div>
 
-# O Frontend
+# O Front-end
 - Para esse projeto foi utilizado o Angular como Framework principal
 - Bibliotecas e ferramentas externas como [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/), [Animate CSS](https://animate.style/), [Google Fonts](https://fonts.google.com/), [Box-Shadow Generator](https://html-css-js.com/css/generator/box-shadow/) e [UIGradients](https://uigradients.com/)
 - As telas foram criadas de modo que sejam facilmente utilizadas, rápidas, interativas e intuitivas:

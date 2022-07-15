@@ -53,7 +53,7 @@
   <img align="center"  height="300px" width="40%" src="/Imagens/Categorias_ssms.png" alt="logo"/>                  
  </div>
 
-# O FrontEnd
+# O Frontend
 - Para esse projeto foi utilizado o Angular como Framework principal
 - Bibliotecas e ferramentas externas como [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/), [Animate CSS](https://animate.style/), [Google Fonts](https://fonts.google.com/), [Box-Shadow Generator](https://html-css-js.com/css/generator/box-shadow/) e [UIGradients](https://uigradients.com/)
 - As telas foram criadas de modo que sejam facilmente utilizadas, rápidas, interativas e intuitivas:

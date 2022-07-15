@@ -1,5 +1,5 @@
                     
-# Cast Admins v1.0.1 [Nova Feature](https://github.com/samuelvictorol/Semana1Cast/blob/main/Features/FeatureBuscarDescricao.md) <img align="center" alt="Samuel-CSS" height="20px" width="20px" src="/Features/img/new.png" alt="logo"/>
+# Cast Admins [v1.0.1 Nova Feature](https://github.com/samuelvictorol/Semana1Cast/blob/main/Features/FeatureBuscarDescricao.md) <img align="center" alt="Samuel-CSS" height="20px" width="20px" src="/Features/img/new.png" alt="logo"/>
   <img align="center" alt="Samuel-CSS" height="300px" width="100%" src="/Imagens/logo.png" alt="logo"/>                  
 
 ## Projeto Semana 1 Cast

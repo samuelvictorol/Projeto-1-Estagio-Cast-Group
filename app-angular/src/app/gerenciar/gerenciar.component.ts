@@ -10,20 +10,45 @@ import { CastServiceService } from '../cast-service.service';
 })
 export class GerenciarComponent implements OnInit {
   cursosList$!: Observable<any[]>
+  cursosList: any = []
   categoriaList$!: Observable<any[]>
   categoriaList: any = []
   showAdd!: boolean
+  busca: any
 //Map para associar as tabelas
   categoriasMap:Map<number, string> = new Map();
 
 
   constructor(private service: CastServiceService, private router: Router) { }
-
-
+  cursosFiltrados: any = []
   ngOnInit(): void {
     this.cursosList$ = this.service.getCurso()
     this.refreshCategoriaMap()
     this.showAdd = false /// trocar quando finalizar add-edit
+    this.service.getCurso().subscribe((data) => {
+      this.cursosFiltrados = data
+
+    })
+  }
+
+  pesquisar(){
+    this.cursosFiltrados = []
+
+    if(this.busca == undefined || this.busca == ' '){
+      this.service.getCurso().subscribe(data => {
+        this.cursosFiltrados = data
+      })
+    }
+
+    this.service.getCurso().subscribe((data) => {
+      this.cursosList = data
+      for (let i = 0; i < data.length; i++) {
+        if(this.cursosList[i].descricao.toLowerCase().includes(this.busca.toLowerCase())) {
+          this.cursosFiltrados.push(this.cursosList[i])
+        }
+      }
+    })
+
   }
 
   refreshCategoriaMap(){

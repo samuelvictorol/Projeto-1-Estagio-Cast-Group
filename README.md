@@ -42,7 +42,7 @@
  </div>
 
 # O Back-end
-- Nesse Projeto foi utilizado a técnica de Code First, que consiste em fazer primeiro o código fonte.
+- Nesse Projeto foi utilizado a técnica de Code First para criação de uma WebApi, que consiste em fazer primeiro o código fonte.
 - Foi utilizado o EntityFramework para construções de tabelas e o Swagger para Requisições HTTP.
 - O banco de dados escolhido foi o SQLServer
 

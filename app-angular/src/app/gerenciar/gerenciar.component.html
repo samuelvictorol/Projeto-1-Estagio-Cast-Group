@@ -12,6 +12,8 @@
     <div class="conteudo animate__animated animate__pulse">
       <div class="buttons-wrapper">
         <button class="btn-add" (click)="addBtn()">Adicionar <strong>+</strong></button>
+        <input type="text" placeholder="Buscar descrição" name="busca" (ngModelChange)="pesquisar()" [(ngModel)]="busca">
+        <img id="icon-buscar" src="assets/procurar.png" alt="icone buscar">
     </div>
     <table class="container table table-hover table-striped table-dark">
       <th>Descrição</th>
@@ -20,7 +22,7 @@
       <th>Alunos</th>
       <th>Categoria</th>
       <tbody>
-        <tr *ngFor="let curso of cursosList$|async" >
+        <tr *ngFor="let curso of cursosFiltrados" >
           <td>{{ curso.descricao }}</td>
           <td>{{curso.dateInicio | date : 'mediumDate'  }}</td>
           <td>{{curso.dateTermino | date : 'mediumDate' }}</td>

@@ -16,6 +16,12 @@
 
 }
 
+input{
+  padding-left:1rem;
+  margin-left: 10rem;
+  border-radius: 20px;
+}
+
 .conteudo{
   /* background-color: rgba(255, 255, 255, 0.314); */
   width: 95%;
@@ -53,6 +59,22 @@
 #busca{
   border-radius: 10px;
   margin-left: 3rem;
+}
+
+#icon-buscar{
+  position: absolute;
+  top: .2rem;
+  right: 49rem;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(184, 184, 184);
+  border-radius: 100%;
+  transition: all 1s;
+}
+
+#icon-buscar:hover{
+  background-color: #fff;
+  width: 40px;
 }
 
 .add-wrapper{

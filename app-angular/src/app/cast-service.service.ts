@@ -75,7 +75,7 @@ export class CastServiceService {
   deleteCategoria(id: number|string){
     return this.http.delete(this.CastAPI + `/Categorias/${id}`);
   }
-
+  cursosList: any = []
   validarData(curso: any) {
     var dataValidada = true
 

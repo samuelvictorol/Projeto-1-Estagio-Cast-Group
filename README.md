@@ -64,6 +64,8 @@
   <img align="center" height="300px" width="45%" src="/Imagens/telaAdd.png" alt="logo"/>                  
 </div>
 
+<hr/>
+
 ## Validações e Testes
 - As Validações de Campo de Formulários foram feitas via TypeScript
 - Os testes serão mostrados durante a Apresentação do Projeto 
@@ -82,6 +84,8 @@
 </div>
  
 ## Tecnologias Utilizadas
+- Dentre as tecnologias que foram usadas nesse projeto temos como principais: SQLServer, ASP.NET webapi, EntityFramework Core, Swagger, Angular e Typescript
+- Foram utilizados também algumas ferramentas de estilização como : BootStrap 5, AnimateCSS, devicons, favicon, unsplash, Drawn.Io ,UIGradients e Google Fonts
  <div style="display: inline_block"><br>
   <link align="center" height="40" width="60 rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <img align="center" height="40" width="60"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
